@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // 👇 CHANGE: Use the Environment Variable, fall back to localhost only if missing
-const baseURL = (import.meta.env.REACT_APP_API_URL || "http://localhost:5000") + "/api";
+const baseURL = (process.env.REACT_APP_API_URL || "http://localhost:5000") + "/api";
 
 const axiosClient = axios.create({
   baseURL: baseURL,
