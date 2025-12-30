@@ -34,7 +34,7 @@ connectDB();
 app.use(express.json());
 
 // ================= ROUTES =================
-app.use("/api/leaderboard", require("./routes/leaderboardroutes"));
+app.use("/api/leaderboard", require("./routes/leaderboardRoutes"));
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/rooms", require("./routes/roomRoutes"));
 app.use("/api/sudoku", require("./routes/sudokuRoutes"));
